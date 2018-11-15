@@ -1,0 +1,47 @@
+
+<view>
+
+
+<view class='top'>
+
+<text class="pos">最新</text>
+<text class='pos1'>上海周浦万达广场</text>
+<text></text>
+
+</view>
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}"         duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"               width="100%" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<view>
+
+  <view wx:for="{{arr}}" wx:key="{{index}}" class='list'>
+  
+    <view class='left fl'>
+         <image src='{{item.images.small}}'></image></view>
+    <view class='right fr'>
+      <view>
+      <text>{{item.title}}</text>
+      <text>9.2分</text>
+      </view>
+      <view>漫威全新反派强势上线</view>
+      <view class='name'><text wx:for="{{item.casts}}">{{item.name}}<text>/</text></text></view>
+      <text class='buy'>购票</text>
+    </view>
+
+
+  </view>
+
+
+
+</view>
+
+
+</view>

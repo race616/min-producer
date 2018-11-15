@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/frend/frend",
+    "pages/aboutme/aboutme",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "电影资讯",
+    "navigationBarTextStyle":"black",
+    "navigationStyle": "default",
+    "backgroundColor":"#fff",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance":50
+
+  },
+  "tabBar":{
+    "color": "#000000",
+    "selectedColor": "#DC143C",
+    "backgroundColor": "#fff",  
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "电影",
+        "iconPath":"img/init/web.png",
+        "selectedIconPath":"img/selector/web.png"
+      },
+      {
+        "pagePath": "pages/frend/frend",
+        "text": "卖品",
+        "iconPath": "img/init/圈子.png",
+        "selectedIconPath": "img/selector/web.png"
+      },
+        {
+          "pagePath": "pages/aboutme/aboutme",
+          "text": "我的",
+          "iconPath": "img/init/我.png",
+          "selectedIconPath": "img/selector/我.png"
+        }
+    ]
+    
+  }
+}
